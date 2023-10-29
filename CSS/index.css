@@ -1,0 +1,76 @@
+#mainContainer{
+    margin:2% 10% 10% 10%;
+}
+
+#step1,#step2{
+    align-items: center;
+    margin-left: 10%;
+}
+h2{
+    margin-left: 10%;
+}
+#textBoxForNumbers{
+    border: 3px solid black; 
+      width: 500px; 
+      height: 100px; 
+      overflow: auto; 
+      align-self: center;
+      align-content: center;
+      text-align: center;
+      margin: 0px 0px 50px 50px ;
+      box-shadow: 5px 5px 5px 5px rgba(3, 160, 22, 0.2);
+  }
+
+#displayNumbers{
+    border: 3px solid black; 
+    width: 500px; 
+    height: 100px; 
+    overflow: auto; 
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    margin: 0px 0px 50px 50px ;
+    box-shadow: 5px 5px 5px 5px rgba(3, 160, 22, 0.2);
+}
+#btnForConcate{
+    margin:0 0 0 20% ;
+    padding: -10%;
+    background-color: bisque;
+    border: 1 2 3 4;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
+}
+
+#btnForConcate:hover{
+    margin: 0% 0 0 20% ;
+    background-color: yellow;
+    animation-duration: 3s;
+    border-radius: 10px;
+    border-top-right-radius: 1;
+    border-color: red;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
+    
+}
+
+#copyText{
+    margin:0% 0 0 20% ;
+    background-color: bisque;
+    border: 1 2 3 4;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
+}
+
+#copyText:hover{
+    margin: 0% 0 0 20% ;
+    background-color: yellow;
+    animation-duration: 3s;
+    border-radius: 10px;
+    border-top-right-radius: 1;
+    border-color: red;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
+    
+}
+
+
