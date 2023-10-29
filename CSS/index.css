@@ -57,6 +57,7 @@ label{
 textarea {
 width: 500px;
 background-color: #f0f0f0;
+/* border: 2px solid #f0f0f0; */
 outline: none;
     height: 250px;
     padding: 10px;
@@ -67,10 +68,12 @@ outline: none;
     resize: none; /* Prevent textarea resizing */
     overflow: auto; /* Add scrollbars */
     margin-bottom: 30px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 textarea:focus{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border: 2px solid #7B2CBF;
+    background-color: transparent;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
 
 }
 
