@@ -1,76 +1,107 @@
-#mainContainer{
-    margin:2% 10% 10% 10%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-#step1,#step2{
+.container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 10%;
+    justify-content: center;
+    height: 100vh;
 }
-h2{
-    margin-left: 10%;
-}
-#textBoxForNumbers{
-    border: 3px solid black; 
-      width: 500px; 
-      height: 100px; 
-      overflow: auto; 
-      align-self: center;
-      align-content: center;
-      text-align: center;
-      margin: 0px 0px 50px 50px ;
-      box-shadow: 5px 5px 5px 5px rgba(3, 160, 22, 0.2);
-  }
 
-#displayNumbers{
-    border: 3px solid black; 
-    width: 500px; 
-    height: 100px; 
-    overflow: auto; 
-    align-self: center;
-    align-content: center;
+.Heading {
     text-align: center;
-    margin: 0px 0px 50px 50px ;
-    box-shadow: 5px 5px 5px 5px rgba(3, 160, 22, 0.2);
-}
-#btnForConcate{
-    margin:0 0 0 20% ;
-    padding: -10%;
-    background-color: bisque;
-    border: 1 2 3 4;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
+    font-size:34px;
+    margin-top: 20px;
+    color: #7B2CBF;
+    font-weight: 600;
+    margin-top: -90px;
 }
 
-#btnForConcate:hover{
-    margin: 0% 0 0 20% ;
-    background-color: yellow;
-    animation-duration: 3s;
-    border-radius: 10px;
-    border-top-right-radius: 1;
-    border-color: red;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
-    
+.Main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-#copyText{
-    margin:0% 0 0 20% ;
-    background-color: bisque;
-    border: 1 2 3 4;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
 }
 
-#copyText:hover{
-    margin: 0% 0 0 20% ;
-    background-color: yellow;
-    animation-duration: 3s;
-    border-radius: 10px;
-    border-top-right-radius: 1;
-    border-color: red;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.2);
-    
+.inp1, .inp2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.inp2{
+    margin-left: 20px;
+}
+label{
+    font-size: 18px;
+    color: #A6A6A6;
+    padding-bottom:20px ;
 }
 
+textarea {
+width: 500px;
+background-color: #f0f0f0;
+outline: none;
+    height: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    padding-top: 20px;
+    border: none;
+    resize: none; /* Prevent textarea resizing */
+    overflow: auto; /* Add scrollbars */
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+textarea:focus{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 500px;
+    height:50px;
+    font-size: 20px;
+    font-weight:400;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);    color: white;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    transition: 0.5s;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+button i{
+    font-size:15px;
+}
+
+button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
