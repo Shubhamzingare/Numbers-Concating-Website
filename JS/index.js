@@ -1,23 +1,26 @@
 
 function concate() {
-    const nums = document.getElementById('textBoxForNumbers').value;
+    const nums = document.getElementById('numinp').value;
 
     let numsArr = nums.split(',');
 
-    let result ="'" + numsArr.join("','") + "'";
- 
+    let result = "'" + numsArr.join("','") + "'";
+
     console.log(result);
 
-    document.getElementById('displayNumbers').innerText = result;
+    document.getElementById('concbox').innerText = result;
 
 }
 
 function CopyNumbers() {
-    let copiedNums =  document.getElementById('displayNumbers').innerText;
+    let copiedNums = document.getElementById('concbox').value;
     if (copiedNums == "") {
         alert("Please click on 'Concatenate' button first");
         return;
     }
-    navigator.clipboard.writeText(copiedNums);
-    alert("Copied to clipboard");
+    else {
+        navigator.clipboard.writeText(copiedNums);
+        alert("Copied to clipboard");
+    }
+
 }
