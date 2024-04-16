@@ -14,6 +14,7 @@
         <div class="Heading">Concate Numbers</div>
         <div class="Main">
             <div class="Hero">
+
                 <div class="inp1">
                     <label for="numinp">Concate Number Into  [‘ ‘]</label>
                     <textarea id="numinp" placeholder="Enter the Numbers Here"></textarea>
@@ -27,10 +28,26 @@
                     <div class="btn-container">
                         <button class="concate-btn" onclick="CopyNumbers()"><i class="fa-regular fa-copy fa-beat"></i>  Copy Data</button>
                     </div>
+                </div>
+
+            </div>
+
+            <div class="Hero2">
+                <div class="inp3">
+                    <label for="numinp">Input CSV</label>
+                    <textarea id="colNums" placeholder="Enter the Numbers Here"></textarea>
                     <div class="btn-container">
-                        <button class="concate-btn"><a href="https://onlinecsvtools.com/convert-csv-columns-to-rows" target="_blank" style=" color: #fff;">convert-csv-columns-to-rows</a></button>
+                        <button class="concate-btn" onclick="verticalToHorizontal()">Covert To Rows</button>
                     </div>
                 </div>
+                <div class="inp4">
+                    <label for="concbox">Output CSV</label>
+                    <textarea id="rowsConvertedValues" placeholder=" Numbers into rows"></textarea>
+                    <div class="btn-container">
+                        <button class="concate-btn" onclick="CopyRows()"><i class="fa-regular fa-copy fa-beat"></i>Copy Data</button>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

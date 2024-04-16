@@ -29,3 +29,39 @@ function CopyNumbers() {
     }
 
 }
+
+
+function verticalToHorizontal() {
+
+    const numbers = document.getElementById('colNums').value;
+
+   
+    if (numbers === ``) {
+        alert("Please enter numbers");
+        return;
+    }
+    const numberArray = numbers.trim().split('\n');
+
+   
+    const horizontalNumbers = numberArray.join(',');
+
+
+
+    document.getElementById('rowsConvertedValues').innerText = horizontalNumbers;
+
+    console.log(horizontalNumbers);
+}
+
+
+function CopyRows() {
+    let copiedNums = document.getElementById('rowsConvertedValues').value;
+    if (copiedNums === ``) {
+        alert("Please click on 'Covert To Rows' button first");
+        return;
+    }
+    else {
+        navigator.clipboard.writeText(copiedNums);
+        alert("Copied to clipboard");
+    }
+
+}
