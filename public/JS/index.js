@@ -59,6 +59,7 @@ function CopyRows() {
         alert("Please click on 'Covert To Rows' button first");
         return;
     }
+    
     else {
         navigator.clipboard.writeText(copiedNums);
         alert("Copied to clipboard");
